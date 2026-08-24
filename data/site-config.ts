@@ -11,15 +11,15 @@ export const siteConfig = {
   businessName: 'Seasons Cafe LLC',
   tagline: 'Premium Japanese Vending Machines — Sold & Operated',
   phone: '',           // e.g. '(202) 555-0100'
-  email: '',           // e.g. 'info@seasonscafellc.com'
+  email: '1seasonscafe@gmail.com',
   address: 'Washington, DC Metro Area',
 
   // ── Social Media ───────────────────────────────────────────
   // Paste the full URL for each platform you use.
   // Leave blank ('') to hide that platform's link/card.
   socials: {
-    facebook:  '',     // e.g. 'https://facebook.com/SeasonsCafeLLC'
-    instagram: '',     // e.g. 'https://instagram.com/seasonscafellc'
+    facebook:  'https://facebook.com/tj.barry.5680',
+    instagram: 'https://instagram.com/seasonscafe_',
     tiktok:    '',     // e.g. 'https://tiktok.com/@seasonscafe'
     youtube:   '',     // e.g. 'https://youtube.com/@SeasonsCafe'
     twitter:   '',     // e.g. 'https://x.com/seasonscafe'

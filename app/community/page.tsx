@@ -19,7 +19,7 @@ const allSocials = [
   {
     icon: FaInstagram,
     name: 'Instagram',
-    handle: '@seasonscafellc',
+    handle: '@seasonscafe_',
     description:
       'Follow us for behind-the-scenes machine placements, new product drops, and daily DMV vending life.',
     configKey: 'instagram' as const,
