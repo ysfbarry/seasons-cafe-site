@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seasons Cafe LLC — Vending Machine Website
+
+Official website for **Seasons Cafe LLC**, exclusive US distributor of premium Japanese hot & cold vending machines, and operator of a local vending placement program serving the DC/Maryland/Virginia area.
+
+---
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Home — hero, two business arms, featured machines, stats, CTA |
+| `/machines` | Machine catalog with Hot / Cold / Combo filter |
+| `/machines/[slug]` | Individual machine detail with specs table |
+| `/quote` | Quote request form (machine sales) |
+| `/place-a-machine` | Placement request form (DMV operators) |
+| `/community` | Social media links and community hub |
+| `/videos` | The Vending Life Podcast — YouTube episode grid |
+
+---
+
+## Tech Stack
+
+- **Next.js 16** (App Router, TypeScript)
+- **Tailwind CSS**
+- **react-icons** (v5)
+- **Formspree** for form email delivery
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Things to Update Before Going Live
 
-## Learn More
+### 1. Formspree Form IDs
+Sign up free at [formspree.io](https://formspree.io), create two forms, then replace the placeholders:
 
-To learn more about Next.js, take a look at the following resources:
+- **Quote form** — `components/QuoteForm.tsx`, line 6:
+  ```ts
+  const FORMSPREE_URL = 'https://formspree.io/f/YOUR_QUOTE_FORM_ID';
+  ```
+- **Placement form** — `components/PlacementForm.tsx`, line 5:
+  ```ts
+  const FORMSPREE_URL = 'https://formspree.io/f/YOUR_PLACEMENT_FORM_ID';
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Social Media Links
+Update the `href` values from `'#'` to your real URLs in:
+- `components/Footer.tsx` — the `socialLinks` array
+- `app/community/page.tsx` — the `socials` array
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Also update the `handle` fields in `app/community/page.tsx` with your real usernames.
 
-## Deploy on Vercel
+### 3. YouTube Channel & Video IDs
+- Replace `dQw4w9WgXcQ` placeholder IDs in `data/videos.ts` with your real YouTube video IDs
+- Update the `href="#"` Subscribe button in `app/videos/page.tsx` with your YouTube channel URL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. Phone Number
+Replace `(placeholder number)` in `app/quote/page.tsx` and `app/place-a-machine/page.tsx` sidebars with your real phone number.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 5. Machine Photos
+Replace the `placehold.co` image URLs in `components/MachineCard.tsx` and `app/machines/[slug]/page.tsx` with real machine photos. Add images to `public/images/` and reference them with `/images/your-photo.jpg`.
+
+---
+
+## Adding New Machines
+
+Edit `data/machines.ts` and add an entry to the `machines` array:
+
+```ts
+{
+  id: '7',
+  slug: 'your-machine-slug',
+  name: 'Your Machine Name',
+  type: 'hot', // 'hot' | 'cold' | 'combo'
+  capacity: '200 cups / 6 varieties',
+  description: 'Your description here.',
+  specs: {
+    Dimensions: '72"H × 26"W × 30"D',
+    Weight: '285 lbs',
+    // ... other specs
+  },
+  featured: false, // set true to show on the Home page
+}
+```
+
+## Adding New Podcast Episodes
+
+Edit `data/videos.ts` and add an entry to the `videos` array:
+
+```ts
+{
+  id: '5',
+  youtubeId: 'YOUR_YOUTUBE_VIDEO_ID', // from the YouTube URL: ?v=THIS_PART
+  title: 'Episode Title',
+  description: 'Short description of the episode.',
+  date: '2026-08-10',
+}
+```
+
+---
+
+## Deploying to Vercel
+
+1. Push this repo to GitHub (already done)
+2. Go to [vercel.com](https://vercel.com) → **Add New Project**
+3. Import `seasons-cafe-site` from GitHub
+4. Click **Deploy** — no configuration needed
+
+Your site will be live in under a minute. You can connect a custom domain in the Vercel dashboard.
+
+---
+
+© 2026 Seasons Cafe LLC. All rights reserved.
