@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import QuoteForm from '@/components/QuoteForm';
 import { FaCheckCircle } from 'react-icons/fa';
+import { siteConfig } from '@/data/site-config';
 
 export const metadata: Metadata = {
   title: 'Get a Quote',
@@ -16,6 +17,7 @@ const benefits = [
 ];
 
 export default function QuotePage() {
+  const { phone, email } = siteConfig;
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
@@ -46,10 +48,21 @@ export default function QuotePage() {
                   </li>
                 ))}
               </ul>
-              <div className="border-t border-gray-200 pt-6">
-                <p className="text-xs text-gray-500 mb-1">Questions? Call or text us:</p>
-                <p className="font-bold text-[#0A1628]">(placeholder number)</p>
-              </div>
+              {(phone || email) && (
+                <div className="border-t border-gray-200 pt-6 space-y-1">
+                  <p className="text-xs text-gray-500 mb-2">Questions? Reach us at:</p>
+                  {phone && (
+                    <a href={`tel:${phone.replace(/\D/g, '')}`} className="block font-bold text-[#0A1628] hover:text-[#D4A017] transition-colors">
+                      {phone}
+                    </a>
+                  )}
+                  {email && (
+                    <a href={`mailto:${email}`} className="block text-sm text-gray-600 hover:text-[#D4A017] transition-colors">
+                      {email}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
