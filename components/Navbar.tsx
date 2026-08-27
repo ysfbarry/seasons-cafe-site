@@ -8,6 +8,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Machines', href: '/machines' },
+  { label: 'Our Drinks', href: '/products' },
   { label: 'Get a Quote', href: '/quote' },
   { label: 'Place a Machine', href: '/place-a-machine' },
   { label: 'Community', href: '/community' },

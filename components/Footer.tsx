@@ -5,6 +5,7 @@ import { siteConfig } from '@/data/site-config';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Machines', href: '/machines' },
+  { label: 'Our Drinks', href: '/products' },
   { label: 'Get a Quote', href: '/quote' },
   { label: 'Place a Machine', href: '/place-a-machine' },
   { label: 'Community', href: '/community' },
