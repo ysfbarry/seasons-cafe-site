@@ -8,6 +8,7 @@ const FORMSPREE_URL = 'https://formspree.io/f/xoeqqbpk';
 export default function QuoteForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  const [otherChecked, setOtherChecked] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -134,7 +135,46 @@ export default function QuoteForm() {
               </span>
             </label>
           ))}
+          <label className="flex items-start gap-2 cursor-pointer group">
+            <input
+              type="checkbox"
+              name="machines"
+              value="Other Machine"
+              className="mt-0.5 accent-[#D4A017]"
+              onChange={(e) => setOtherChecked(e.target.checked)}
+            />
+            <span className="text-sm text-gray-700 group-hover:text-gray-900 font-medium">
+              Other Machine (describe below)
+            </span>
+          </label>
         </div>
+
+        {otherChecked && (
+          <div className="mt-4 space-y-3 bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <div>
+              <label htmlFor="otherMachineDescription" className="block text-sm font-medium text-gray-700 mb-1">
+                Describe the machine you&apos;re looking for <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                id="otherMachineDescription"
+                name="otherMachineDescription"
+                rows={3}
+                placeholder="e.g. A compact hot drink machine for a small office, around 200 cups capacity, with a touchscreen..."
+                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent resize-none"
+              />
+            </div>
+            <div className="bg-white border border-amber-300 rounded-md p-3 text-sm text-gray-600">
+              <p className="font-semibold text-gray-800 mb-1">Have a photo of what you&apos;re looking for?</p>
+              <p>
+                Email your reference photos to{' '}
+                <a href="mailto:1seasonscafe@gmail.com" className="text-[#D4A017] font-medium hover:underline">
+                  1seasonscafe@gmail.com
+                </a>{' '}
+                with the subject line <span className="font-mono bg-gray-100 px-1 rounded">Quote Request – Machine Photo</span> and we&apos;ll source it for you.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Quantity */}
