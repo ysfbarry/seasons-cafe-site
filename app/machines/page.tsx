@@ -17,8 +17,6 @@ type FilterType = 'all' | MachineType;
 
 const filters: { label: string; value: FilterType }[] = [
   { label: 'All Machines', value: 'all' },
-  { label: 'Hot Beverages', value: 'hot' },
-  { label: 'Cold Drinks', value: 'cold' },
   { label: 'Hot & Cold Combo', value: 'combo' },
 ];
 
