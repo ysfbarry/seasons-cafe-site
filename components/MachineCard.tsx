@@ -18,7 +18,9 @@ const typeLabel: Record<string, string> = {
 };
 
 export default function MachineCard({ machine }: MachineCardProps) {
-  const imageUrl = `https://placehold.co/600x400/0A1628/D4A017?text=${encodeURIComponent(machine.name)}`;
+  const imageUrl =
+    machine.image ||
+    `https://placehold.co/600x400/0A1628/D4A017?text=${encodeURIComponent(machine.name)}`;
 
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group flex flex-col">
@@ -27,7 +29,7 @@ export default function MachineCard({ machine }: MachineCardProps) {
         <img
           src={imageUrl}
           alt={machine.name}
-          className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <span
           className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${typeBadgeColors[machine.type]}`}
