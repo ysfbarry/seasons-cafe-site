@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { machines } from '@/data/machines';
 
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_QUOTE_FORM_ID';
+const FORMSPREE_URL = 'https://formspree.io/f/xoeqqbpk';
 
 export default function QuoteForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');

@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_PLACEMENT_FORM_ID';
+const FORMSPREE_URL = 'https://formspree.io/f/xoeqqbpk';
 
 const locationTypes = ['Office', 'Gym', 'Hotel', 'School', 'Retail', 'Other'];
 
