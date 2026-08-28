@@ -181,20 +181,41 @@ export default function ProductsPage() {
 function ProductRow({ product }: { product: import('@/data/products').Product }) {
   const badge = tempBadge[product.temp];
   return (
-    <div className="flex items-start gap-4 p-4 rounded-xl border border-gray-100 bg-gray-50 hover:border-[#D4A017]/40 hover:shadow-sm transition-all">
-      <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-2 mb-1">
-          <span className="text-xs font-bold text-[#D4A017] uppercase tracking-wide">
-            {product.brand}
-          </span>
-          <span
-            className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${badge.className}`}
-          >
-            {badge.label}
-          </span>
-        </div>
-        <p className="font-semibold text-[#0A1628] text-sm leading-snug">{product.name}</p>
-        <p className="text-xs text-gray-400 mt-0.5">{product.size}</p>
+    <div className="rounded-xl border border-gray-100 bg-white hover:border-[#D4A017]/50 hover:shadow-md transition-all overflow-hidden flex flex-col">
+      {/* Product image */}
+      <div className="relative w-full h-44 bg-gray-50 flex items-center justify-center overflow-hidden">
+        {product.image ? (
+          <img
+            src={product.image}
+            alt={`${product.brand} ${product.name}`}
+            className="w-full h-full object-contain p-3"
+          />
+        ) : (
+          /* Branded placeholder until real photo is added */
+          <div className="flex flex-col items-center justify-center gap-2 text-center px-4">
+            <div className="w-16 h-16 rounded-full bg-[#0A1628] flex items-center justify-center">
+              <span className="text-[#D4A017] font-extrabold text-2xl">
+                {product.brand.charAt(0)}
+              </span>
+            </div>
+            <span className="text-xs text-gray-400 font-medium">{product.brand}</span>
+          </div>
+        )}
+        {/* Temp badge overlay */}
+        <span
+          className={`absolute top-2 right-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${badge.className}`}
+        >
+          {badge.label}
+        </span>
+      </div>
+
+      {/* Info */}
+      <div className="p-4 flex-1">
+        <span className="text-xs font-bold text-[#D4A017] uppercase tracking-wide">
+          {product.brand}
+        </span>
+        <p className="font-semibold text-[#0A1628] text-sm leading-snug mt-0.5">{product.name}</p>
+        <p className="text-xs text-gray-400 mt-1">{product.size}</p>
         {product.note && (
           <p className="text-xs text-gray-500 mt-1 italic">{product.note}</p>
         )}

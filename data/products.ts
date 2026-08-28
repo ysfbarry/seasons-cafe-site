@@ -16,6 +16,12 @@ export interface Product {
   temp: TempType;
   size: string;
   note?: string;
+  /**
+   * Path to the product image inside /public/images/products/
+   * e.g. '/images/products/ucc-coffee-milk.jpg'
+   * Leave blank to show the branded placeholder.
+   */
+  image?: string;
 }
 
 export const categoryMeta: Record<
