@@ -70,6 +70,7 @@ export const products: Product[] = [
     temp: 'hot-cold',
     size: '11.4 fl oz',
     note: 'Since 1969 — pioneer of canned liquid coffee in Japan',
+    image: '/images/products/ucc-coffee-milk.jpg',
   },
   {
     id: 'ucc-milk-tea',
@@ -78,6 +79,7 @@ export const products: Product[] = [
     category: 'japanese-asian-coffee',
     temp: 'hot-cold',
     size: '11.4 fl oz',
+    image: '/images/products/ucc-milk-tea.jpg',
   },
   {
     id: 'ucc-matcha-latte',
@@ -87,6 +89,7 @@ export const products: Product[] = [
     temp: 'hot-cold',
     size: '8.79 fl oz',
     note: 'Uji matcha from Kyoto',
+    image: '/images/products/ucc-matcha-latte.jpg',
   },
   {
     id: 'ucc-caffe-latte',
@@ -95,6 +98,7 @@ export const products: Product[] = [
     category: 'japanese-asian-coffee',
     temp: 'hot-cold',
     size: '8.79 fl oz',
+    image: '/images/products/ucc-caffe-latte.jpg',
   },
   {
     id: 'pokka-black-coffee',
@@ -104,6 +108,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8.1 fl oz',
     note: 'Real brewed from roasted coffee beans',
+    image: '/images/products/pokka-black-coffee.jpg',
   },
   {
     id: 'pokka-cappuccino',
@@ -113,6 +118,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8.1 fl oz',
     note: 'Real brewed from coffee beans',
+    image: '/images/products/pokka-cappuccino.jpg',
   },
   {
     id: 'pokka-vanilla-coffee',
@@ -122,6 +128,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8.1 fl oz',
     note: 'Real brewed from roasted coffee beans',
+    image: '/images/products/pokka-vanilla-coffee.jpg',
   },
   {
     id: 'pokka-milk-coffee',
@@ -131,6 +138,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8.1 fl oz',
     note: 'Real brewed from coffee beans',
+    image: '/images/products/pokka-milk-coffee.jpg',
   },
   {
     id: 'lotte-lets-be',
@@ -140,6 +148,7 @@ export const products: Product[] = [
     temp: 'hot-cold',
     size: '5.92 fl oz',
     note: '60 calories',
+    image: '/images/products/lotte-lets-be.jpg',
   },
 
   // ── American Coffee ──────────────────────────────────────────────────
@@ -150,6 +159,7 @@ export const products: Product[] = [
     category: 'american-coffee',
     temp: 'hot-cold',
     size: '8.12 fl oz (240 mL)',
+    image: '/images/products/mr-brown-blue-mountain.jpg',
   },
   {
     id: 'mr-brown-cappuccino',
@@ -158,6 +168,7 @@ export const products: Product[] = [
     category: 'american-coffee',
     temp: 'hot-cold',
     size: '8.12 fl oz (240 mL)',
+    image: '/images/products/mr-brown-cappuccino.jpg',
   },
   {
     id: 'mr-brown-black-coffee',
@@ -166,6 +177,7 @@ export const products: Product[] = [
     category: 'american-coffee',
     temp: 'hot-cold',
     size: '8.12 fl oz (240 mL)',
+    image: '/images/products/mr-brown-black-coffee.jpg',
   },
   {
     id: 'mr-brown-vanilla',
@@ -174,6 +186,7 @@ export const products: Product[] = [
     category: 'american-coffee',
     temp: 'hot-cold',
     size: '8.12 fl oz (240 mL)',
+    image: '/images/products/mr-brown-vanilla.jpg',
   },
   {
     id: 'brcc-espresso-cream',
@@ -183,6 +196,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11 fl oz (325 mL)',
     note: '200mg caffeine — Veteran Owned',
+    image: '/images/products/brcc-espresso-cream.jpg',
   },
   {
     id: 'brcc-espresso-salty-caramel',
@@ -192,6 +206,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11 fl oz (325 mL)',
     note: '200mg caffeine — Gluten Free',
+    image: '/images/products/brcc-espresso-salty-caramel.jpg',
   },
   {
     id: 'brcc-espresso-mocha',
@@ -201,6 +216,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11 fl oz (325 mL)',
     note: '200mg caffeine',
+    image: '/images/products/brcc-espresso-mocha.jpg',
   },
   {
     id: 'brcc-300-mocha',
@@ -210,6 +226,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '15 fl oz (443 mL)',
     note: '300mg caffeine — 100% Colombian Coffee',
+    image: '/images/products/brcc-300-mocha.jpg',
   },
   {
     id: 'brcc-300-caramel-vanilla',
@@ -219,6 +236,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '15 fl oz (443 mL)',
     note: '300mg caffeine — 100% Colombian Coffee',
+    image: '/images/products/brcc-300-caramel-vanilla.jpg',
   },
   {
     id: 'brcc-300-vanilla-bomb',
@@ -228,6 +246,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '15 fl oz (443 mL)',
     note: '300mg caffeine — 100% Arabica Coffee',
+    image: '/images/products/brcc-300-vanilla-bomb.jpg',
   },
 
   // ── Energy Drinks ────────────────────────────────────────────────────
@@ -238,6 +257,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-original.jpg',
   },
   {
     id: 'redbull-sugarfree',
@@ -246,6 +266,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-sugarfree.jpg',
   },
   {
     id: 'redbull-red-edition',
@@ -254,6 +275,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-red-edition.jpg',
   },
   {
     id: 'redbull-summer-edition',
@@ -262,6 +284,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-summer-edition.jpg',
   },
   {
     id: 'redbull-pink-edition',
@@ -270,6 +293,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-pink-edition.jpg',
   },
   {
     id: 'redbull-amber-edition',
@@ -278,6 +302,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '8.4 fl oz (250 mL)',
+    image: '/images/products/redbull-amber-edition.jpg',
   },
   {
     id: 'redbull-sea-blue-edition',
@@ -286,6 +311,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/redbull-sea-blue-edition.jpg',
   },
   {
     id: 'redbull-coconut-edition',
@@ -294,6 +320,7 @@ export const products: Product[] = [
     category: 'energy-drinks',
     temp: 'cold',
     size: '8.4 fl oz (250 mL)',
+    image: '/images/products/redbull-coconut-edition.jpg',
   },
   {
     id: 'v8-energy-pomegranate',
@@ -303,6 +330,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8 fl oz (237 mL)',
     note: 'Steady energy & supports focus',
+    image: '/images/products/v8-energy-pomegranate.jpg',
   },
   {
     id: 'v8-energy-peach-mango',
@@ -312,6 +340,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8 fl oz (237 mL)',
     note: 'Steady energy from green tea',
+    image: '/images/products/v8-energy-peach-mango.jpg',
   },
 
   // ── Protein & Nutrition ──────────────────────────────────────────────
@@ -323,6 +352,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12 fl oz',
     note: '30g protein · 1g sugar · No artificial sweeteners',
+    image: '/images/products/oikos-chocolate.jpg',
   },
   {
     id: 'oikos-vanilla',
@@ -332,6 +362,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12 fl oz',
     note: '30g protein · 1g sugar · No artificial sweeteners',
+    image: '/images/products/oikos-vanilla.jpg',
   },
   {
     id: 'fairlife-chocolate',
@@ -341,6 +372,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11.5 fl oz',
     note: '30g protein · 150 calories',
+    image: '/images/products/fairlife-chocolate.jpg',
   },
   {
     id: 'fairlife-core-power-chocolate',
@@ -350,6 +382,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '14 fl oz',
     note: '26g protein · High quality milk shake',
+    image: '/images/products/fairlife-core-power-chocolate.jpg',
   },
   {
     id: 'raw-protein-chocolate',
@@ -359,6 +392,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12 fl oz',
     note: '30g protein · 160 calories',
+    image: '/images/products/raw-protein-chocolate.jpg',
   },
   {
     id: 'dymatize-fruity-pebbles',
@@ -368,6 +402,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11.5 fl oz',
     note: '30g protein',
+    image: '/images/products/dymatize-fruity-pebbles.jpg',
   },
   {
     id: 'nurri-vanilla',
@@ -377,6 +412,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11 fl oz (325 mL)',
     note: '30g protein · 1g sugar',
+    image: '/images/products/nurri-vanilla.jpg',
   },
   {
     id: 'nurri-chocolate',
@@ -386,6 +422,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11 fl oz (325 mL)',
     note: '30g protein · 1g sugar',
+    image: '/images/products/nurri-chocolate.jpg',
   },
 
   // ── Teas & Specialty ─────────────────────────────────────────────────
@@ -396,6 +433,7 @@ export const products: Product[] = [
     category: 'teas-specialty',
     temp: 'cold',
     size: '16.9 fl oz (500 mL)',
+    image: '/images/products/itoen-jasmine-green-tea.jpg',
   },
   {
     id: 'sangaria-strawberry-milk',
@@ -405,6 +443,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '8.96 fl oz (265 mL)',
     note: 'Strawberries blended with real milk',
+    image: '/images/products/sangaria-strawberry-milk.jpg',
   },
   {
     id: 'kimbo-thai-tea',
@@ -413,6 +452,7 @@ export const products: Product[] = [
     category: 'teas-specialty',
     temp: 'cold',
     size: '11.2 fl oz (350 mL)',
+    image: '/images/products/kimbo-thai-tea.jpg',
   },
   {
     id: 'rico-bubble-taro',
@@ -422,6 +462,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12.3 fl oz (350 g)',
     note: 'Taiwan Classic',
+    image: '/images/products/rico-bubble-taro.jpg',
   },
   {
     id: 'rico-bubble-original',
@@ -431,6 +472,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12.3 fl oz (350 g)',
     note: 'Taiwan Classic',
+    image: '/images/products/rico-bubble-original.jpg',
   },
   {
     id: 'rico-bubble-brown-sugar',
@@ -440,6 +482,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12.3 fl oz (350 g)',
     note: 'Taiwan Classic',
+    image: '/images/products/rico-bubble-brown-sugar.jpg',
   },
 
   // ── Sodas & Hydration ────────────────────────────────────────────────
@@ -450,6 +493,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '11 fl oz',
+    image: '/images/products/yoohoo-chocolate.jpg',
   },
   {
     id: 'mojo-coconut-water',
@@ -459,6 +503,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '11.1 fl oz (330 mL)',
     note: 'Non-GMO Verified · Never from concentrate',
+    image: '/images/products/mojo-coconut-water.jpg',
   },
   {
     id: 'prime-cherry-freeze',
@@ -467,6 +512,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '16.9 fl oz (500 mL)',
+    image: '/images/products/prime-cherry-freeze.jpg',
   },
   {
     id: 'canada-dry-ginger-ale',
@@ -475,6 +521,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/canada-dry-ginger-ale.jpg',
   },
   {
     id: 'canada-dry-cranberry',
@@ -483,6 +530,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '12 fl oz (355 mL)',
+    image: '/images/products/canada-dry-cranberry.jpg',
   },
   {
     id: 'canada-dry-cherry-splash',
@@ -492,6 +540,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12 fl oz (355 mL)',
     note: 'Made with a splash of real juice',
+    image: '/images/products/canada-dry-cherry-splash.jpg',
   },
   {
     id: 'canada-dry-blackberry',
@@ -501,6 +550,7 @@ export const products: Product[] = [
     temp: 'cold',
     size: '12 fl oz (355 mL)',
     note: 'Caffeine free',
+    image: '/images/products/canada-dry-blackberry.jpg',
   },
   {
     id: 'okf-aloe-mango',
@@ -509,6 +559,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '16.9 fl oz (500 mL)',
+    image: '/images/products/okf-aloe-mango.jpg',
   },
   {
     id: 'okf-aloe-pineapple',
@@ -517,6 +568,7 @@ export const products: Product[] = [
     category: 'sodas-hydration',
     temp: 'cold',
     size: '16.9 fl oz (500 mL)',
+    image: '/images/products/okf-aloe-pineapple.jpg',
   },
   {
     id: 'lotte-milkis-original',
@@ -526,6 +578,7 @@ export const products: Product[] = [
     temp: 'hot-cold',
     size: '8.45 fl oz (250 mL)',
     note: "Korea's No. 1 Cream Soda",
+    image: '/images/products/lotte-milkis-original.jpg',
   },
   {
     id: 'lotte-milkis-apple',
@@ -535,6 +588,7 @@ export const products: Product[] = [
     temp: 'hot-cold',
     size: '8.45 fl oz (250 mL)',
     note: "Korea's No. 1 Cream Soda",
+    image: '/images/products/lotte-milkis-apple.jpg',
   },
 ];
 
