@@ -4,6 +4,9 @@ import { siteConfig } from '@/data/site-config';
 
 const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact Us', href: '/contact' },
+  { label: 'Careers', href: '/careers' },
   { label: 'Machines', href: '/machines' },
   { label: 'Our Drinks', href: '/products' },
   { label: 'Get a Quote', href: '/quote' },
@@ -24,13 +27,13 @@ export default function Footer() {
   ].filter((s) => s.href);
 
   return (
-    <footer className="bg-[#0A1628] border-t border-[#D4A017]/20 text-gray-400">
+    <footer className="bg-[#0A1628] border-t border-[#38BDF8]/20 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-[#D4A017] font-bold text-lg">Seasons</span>
+              <span className="text-[#38BDF8] font-bold text-lg">Seasons</span>
               <span className="text-white font-light text-lg">Cafe LLC</span>
             </div>
             <p className="text-sm leading-relaxed mb-4">
@@ -40,7 +43,7 @@ export default function Footer() {
             {email && (
               <a
                 href={`mailto:${email}`}
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#D4A017] transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#38BDF8] transition-colors"
               >
                 <FaEnvelope size={14} />
                 {email}
@@ -49,7 +52,7 @@ export default function Footer() {
             {phone && (
               <a
                 href={`tel:${phone.replace(/\D/g, '')}`}
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#D4A017] transition-colors mt-1"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#38BDF8] transition-colors mt-1"
               >
                 {phone}
               </a>
@@ -66,7 +69,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-[#D4A017] transition-colors"
+                    className="text-sm hover:text-[#38BDF8] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -89,7 +92,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="text-gray-400 hover:text-[#D4A017] transition-colors"
+                    className="text-gray-400 hover:text-[#38BDF8] transition-colors"
                   >
                     <Icon size={22} />
                   </a>
@@ -101,7 +104,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#D4A017]/10 mt-10 pt-6 text-center text-sm">
+        <div className="border-t border-[#38BDF8]/10 mt-10 pt-6 text-center text-sm">
           © {new Date().getFullYear()} Seasons Cafe LLC. All rights reserved.
         </div>
       </div>

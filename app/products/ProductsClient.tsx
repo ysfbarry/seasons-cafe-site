@@ -47,7 +47,7 @@ export default function ProductsPage() {
       {/* ─── Page Header ─── */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             What We Stock
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">Our Drinks</h1>
@@ -59,7 +59,7 @@ export default function ProductsPage() {
       </div>
 
       {/* ─── Hot & Cold callout ─── */}
-      <div className="bg-[#D4A017]">
+      <div className="bg-[#38BDF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center gap-x-6 gap-y-1">
           <span className="text-[#0A1628] font-bold text-sm">🌡 Hot &amp; Cold capable:</span>
           <span className="text-[#0A1628] text-sm">UCC · Mr. Brown · Lotte</span>
@@ -78,7 +78,7 @@ export default function ProductsPage() {
             placeholder="Search by name or brand…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 border border-gray-200 rounded-full px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="flex-1 border border-gray-200 rounded-full px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
           {/* Temp filter */}
           <div className="flex gap-2 flex-wrap">
@@ -88,8 +88,8 @@ export default function ProductsPage() {
                 onClick={() => setActiveTemp(f.value)}
                 className={`px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${
                   activeTemp === f.value
-                    ? 'bg-[#D4A017] text-[#0A1628] border-[#D4A017]'
-                    : 'bg-white text-gray-600 border-gray-200 hover:border-[#D4A017] hover:text-[#D4A017]'
+                    ? 'bg-[#38BDF8] text-[#0A1628] border-[#38BDF8]'
+                    : 'bg-white text-gray-600 border-gray-200 hover:border-[#38BDF8] hover:text-[#38BDF8]'
                 }`}
               >
                 {f.label}
@@ -181,7 +181,7 @@ export default function ProductsPage() {
 function ProductRow({ product }: { product: import('@/data/products').Product }) {
   const badge = tempBadge[product.temp];
   return (
-    <div className="rounded-xl border border-gray-100 bg-white hover:border-[#D4A017]/50 hover:shadow-md transition-all overflow-hidden flex flex-col">
+    <div className="rounded-xl border border-gray-100 bg-white hover:border-[#38BDF8]/50 hover:shadow-md transition-all overflow-hidden flex flex-col">
       {/* Product image */}
       <div className="relative w-full h-44 bg-gray-50 flex items-center justify-center overflow-hidden">
         {product.image ? (
@@ -194,7 +194,7 @@ function ProductRow({ product }: { product: import('@/data/products').Product })
           /* Branded placeholder until real photo is added */
           <div className="flex flex-col items-center justify-center gap-2 text-center px-4">
             <div className="w-16 h-16 rounded-full bg-[#0A1628] flex items-center justify-center">
-              <span className="text-[#D4A017] font-extrabold text-2xl">
+              <span className="text-[#38BDF8] font-extrabold text-2xl">
                 {product.brand.charAt(0)}
               </span>
             </div>
@@ -211,7 +211,7 @@ function ProductRow({ product }: { product: import('@/data/products').Product })
 
       {/* Info */}
       <div className="p-4 flex-1">
-        <span className="text-xs font-bold text-[#D4A017] uppercase tracking-wide">
+        <span className="text-xs font-bold text-[#38BDF8] uppercase tracking-wide">
           {product.brand}
         </span>
         <p className="font-semibold text-[#0A1628] text-sm leading-snug mt-0.5">{product.name}</p>

@@ -31,7 +31,7 @@ export default function VideoCard({ video }: VideoCardProps) {
         />
         {/* Play button overlay */}
         <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
-          <div className="w-14 h-14 rounded-full bg-[#D4A017] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+          <div className="w-14 h-14 rounded-full bg-[#38BDF8] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
             <svg
               viewBox="0 0 24 24"
               fill="white"
@@ -54,7 +54,7 @@ export default function VideoCard({ video }: VideoCardProps) {
           href={youtubeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 block text-center text-sm font-semibold bg-[#D4A017] text-[#0A1628] rounded-md py-2 hover:bg-[#e6b21e] transition-colors"
+          className="mt-5 block text-center text-sm font-semibold bg-[#38BDF8] text-[#0A1628] rounded-md py-2 hover:bg-[#0EA5E9] transition-colors"
         >
           Watch on YouTube
         </a>

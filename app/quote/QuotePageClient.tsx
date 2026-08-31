@@ -83,7 +83,7 @@ export default function QuotePageClient() {
       {/* Header */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             {current.label}
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">{current.title}</h1>
@@ -101,7 +101,7 @@ export default function QuotePageClient() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-6 py-4 text-sm font-semibold border-b-2 whitespace-nowrap transition-colors ${
                   activeTab === tab.id
-                    ? 'border-[#D4A017] text-[#D4A017]'
+                    ? 'border-[#38BDF8] text-[#38BDF8]'
                     : 'border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-300'
                 }`}
               >
@@ -124,7 +124,7 @@ export default function QuotePageClient() {
                 <ul className="space-y-3 mb-8">
                   {quoteBenefits.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 text-sm text-gray-700">
-                      <FaCheckCircle className="text-[#D4A017] shrink-0 mt-0.5" />
+                      <FaCheckCircle className="text-[#38BDF8] shrink-0 mt-0.5" />
                       {b}
                     </li>
                   ))}
@@ -135,7 +135,7 @@ export default function QuotePageClient() {
                     {phone && (
                       <a
                         href={`tel:${phone.replace(/\D/g, '')}`}
-                        className="block font-bold text-[#0A1628] hover:text-[#D4A017] transition-colors"
+                        className="block font-bold text-[#0A1628] hover:text-[#38BDF8] transition-colors"
                       >
                         {phone}
                       </a>
@@ -143,7 +143,7 @@ export default function QuotePageClient() {
                     {email && (
                       <a
                         href={`mailto:${email}`}
-                        className="block text-sm text-gray-600 hover:text-[#D4A017] transition-colors"
+                        className="block text-sm text-gray-600 hover:text-[#38BDF8] transition-colors"
                       >
                         {email}
                       </a>
@@ -167,7 +167,7 @@ export default function QuotePageClient() {
                 <ul className="space-y-3 mb-8">
                   {placementBenefits.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 text-sm text-gray-700">
-                      <FaCheckCircle className="text-[#D4A017] shrink-0 mt-0.5" />
+                      <FaCheckCircle className="text-[#38BDF8] shrink-0 mt-0.5" />
                       {b}
                     </li>
                   ))}
@@ -178,7 +178,7 @@ export default function QuotePageClient() {
                     {phone && (
                       <a
                         href={`tel:${phone.replace(/\D/g, '')}`}
-                        className="block font-bold text-[#0A1628] hover:text-[#D4A017] transition-colors"
+                        className="block font-bold text-[#0A1628] hover:text-[#38BDF8] transition-colors"
                       >
                         {phone}
                       </a>
@@ -186,7 +186,7 @@ export default function QuotePageClient() {
                     {email && (
                       <a
                         href={`mailto:${email}`}
-                        className="block text-sm text-gray-600 hover:text-[#D4A017] transition-colors"
+                        className="block text-sm text-gray-600 hover:text-[#38BDF8] transition-colors"
                       >
                         {email}
                       </a>
@@ -210,12 +210,12 @@ export default function QuotePageClient() {
                   key={loc.name}
                   className="bg-[#0A1628] text-white rounded-2xl p-6 flex flex-col gap-3"
                 >
-                  <div className="w-10 h-10 bg-[#D4A017] rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 bg-[#38BDF8] rounded-full flex items-center justify-center shrink-0">
                     <FaMapMarkerAlt className="text-[#0A1628] text-lg" />
                   </div>
                   <div>
                     <h3 className="text-lg font-extrabold">{loc.name}</h3>
-                    <p className="text-[#D4A017] text-xs font-semibold mt-0.5">{loc.detail}</p>
+                    <p className="text-[#38BDF8] text-xs font-semibold mt-0.5">{loc.detail}</p>
                   </div>
                   <p className="text-gray-300 text-sm leading-relaxed">{loc.description}</p>
                 </div>
@@ -232,7 +232,7 @@ export default function QuotePageClient() {
               </p>
               <button
                 onClick={() => setActiveTab('placement')}
-                className="bg-[#D4A017] text-[#0A1628] font-bold px-8 py-3 rounded-full hover:bg-[#e6b21e] transition-colors"
+                className="bg-[#38BDF8] text-[#0A1628] font-bold px-8 py-3 rounded-full hover:bg-[#0EA5E9] transition-colors"
               >
                 Request Machine Placement
               </button>

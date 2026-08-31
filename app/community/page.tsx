@@ -84,7 +84,7 @@ export default function CommunityPage() {
       {/* Header */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             Community
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
@@ -116,7 +116,7 @@ export default function CommunityPage() {
                   <h3 className="font-bold text-[#0A1628] text-lg mb-0.5">{name}</h3>
                   <p className="text-xs text-gray-500 mb-3">{handle}</p>
                   <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
-                  <span className="mt-3 inline-block text-xs font-semibold text-[#D4A017] group-hover:underline">
+                  <span className="mt-3 inline-block text-xs font-semibold text-[#38BDF8] group-hover:underline">
                     Follow →
                   </span>
                 </div>
@@ -133,12 +133,12 @@ export default function CommunityPage() {
         {/* Email CTA */}
         {email && (
           <div className="mt-10 bg-[#0A1628] rounded-2xl p-8 text-center text-white">
-            <FaEnvelope size={32} className="text-[#D4A017] mx-auto mb-3" />
+            <FaEnvelope size={32} className="text-[#38BDF8] mx-auto mb-3" />
             <h2 className="text-xl font-extrabold mb-2">Prefer Email?</h2>
             <p className="text-gray-300 mb-5 text-sm">Reach out directly and we&apos;ll get back to you within 1–2 business days.</p>
             <a
               href={`mailto:${email}`}
-              className="inline-block bg-[#D4A017] text-[#0A1628] font-bold px-6 py-3 rounded-md hover:bg-[#e6b21e] transition-colors"
+              className="inline-block bg-[#38BDF8] text-[#0A1628] font-bold px-6 py-3 rounded-md hover:bg-[#0EA5E9] transition-colors"
             >
               {email}
             </a>
@@ -156,7 +156,7 @@ export default function CommunityPage() {
           </p>
           <p className="text-sm text-gray-500">
             Use the hashtag{' '}
-            <span className="font-semibold text-[#D4A017]">#SeasonsCafe</span> to be featured
+            <span className="font-semibold text-[#38BDF8]">#SeasonsCafe</span> to be featured
             across our channels.
           </p>
         </div>

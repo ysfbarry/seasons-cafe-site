@@ -49,9 +49,9 @@ export default async function MachineDetailPage({ params }: Props) {
       <div className="bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="text-sm text-gray-500 flex items-center gap-2">
-            <Link href="/" className="hover:text-[#D4A017] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#38BDF8] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/machines" className="hover:text-[#D4A017] transition-colors">Machines</Link>
+            <Link href="/machines" className="hover:text-[#38BDF8] transition-colors">Machines</Link>
             <span>/</span>
             <span className="text-[#0A1628] font-medium">{machine.name}</span>
           </nav>
@@ -120,7 +120,7 @@ export default async function MachineDetailPage({ params }: Props) {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/quote"
-                className="flex-1 text-center bg-[#D4A017] text-[#0A1628] font-bold px-6 py-3 rounded-md hover:bg-[#e6b21e] transition-colors"
+                className="flex-1 text-center bg-[#38BDF8] text-[#0A1628] font-bold px-6 py-3 rounded-md hover:bg-[#0EA5E9] transition-colors"
               >
                 Request a Quote
               </Link>
@@ -147,7 +147,7 @@ export default async function MachineDetailPage({ params }: Props) {
           </p>
           <Link
             href="/quote"
-            className="bg-[#D4A017] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#e6b21e] transition-colors"
+            className="bg-[#38BDF8] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#0EA5E9] transition-colors"
           >
             Get a Quote Now
           </Link>

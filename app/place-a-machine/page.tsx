@@ -33,7 +33,7 @@ export default function PlaceAMachinePage() {
       {/* Header */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             DMV Placement Program
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">Place a Machine</h1>
@@ -71,7 +71,7 @@ export default function PlaceAMachinePage() {
               <ul className="space-y-3 mb-8">
                 {benefits.map((b) => (
                   <li key={b} className="flex items-start gap-2.5 text-sm text-gray-700">
-                    <FaCheckCircle className="text-[#D4A017] shrink-0 mt-0.5" />
+                    <FaCheckCircle className="text-[#38BDF8] shrink-0 mt-0.5" />
                     {b}
                   </li>
                 ))}
@@ -80,12 +80,12 @@ export default function PlaceAMachinePage() {
                 <div className="border-t border-gray-200 pt-6 space-y-1">
                   <p className="text-xs text-gray-500 mb-2">Have questions first?</p>
                   {phone && (
-                    <a href={`tel:${phone.replace(/\D/g, '')}`} className="block font-bold text-[#0A1628] hover:text-[#D4A017] transition-colors">
+                    <a href={`tel:${phone.replace(/\D/g, '')}`} className="block font-bold text-[#0A1628] hover:text-[#38BDF8] transition-colors">
                       {phone}
                     </a>
                   )}
                   {email && (
-                    <a href={`mailto:${email}`} className="block text-sm text-gray-600 hover:text-[#D4A017] transition-colors">
+                    <a href={`mailto:${email}`} className="block text-sm text-gray-600 hover:text-[#38BDF8] transition-colors">
                       {email}
                     </a>
                   )}

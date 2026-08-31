@@ -58,7 +58,7 @@ export default function PlacementForm() {
         </p>
         <button
           onClick={() => setStatus('idle')}
-          className="mt-6 px-6 py-2 bg-[#D4A017] text-[#0A1628] font-semibold rounded-md hover:bg-[#e6b21e] transition-colors"
+          className="mt-6 px-6 py-2 bg-[#38BDF8] text-[#0A1628] font-semibold rounded-md hover:bg-[#0EA5E9] transition-colors"
         >
           Submit Another Request
         </button>
@@ -84,7 +84,7 @@ export default function PlacementForm() {
             name="contactName"
             type="text"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -96,7 +96,7 @@ export default function PlacementForm() {
             name="businessName"
             type="text"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -108,7 +108,7 @@ export default function PlacementForm() {
             name="streetAddress"
             type="text"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -121,7 +121,7 @@ export default function PlacementForm() {
             type="text"
             required
             placeholder="e.g. Washington, DC"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -133,7 +133,7 @@ export default function PlacementForm() {
             name="phone"
             type="tel"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -145,7 +145,7 @@ export default function PlacementForm() {
             name="email"
             type="email"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
       </div>
@@ -159,7 +159,7 @@ export default function PlacementForm() {
           id="locationType"
           name="locationType"
           required
-          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent bg-white"
+          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent bg-white"
         >
           <option value="">Select location type…</option>
           {locationTypes.map((t) => (
@@ -179,7 +179,7 @@ export default function PlacementForm() {
           id="footTraffic"
           name="footTraffic"
           required
-          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent bg-white"
+          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent bg-white"
         >
           <option value="">Select foot traffic…</option>
           {footTrafficOptions.map((o) => (
@@ -200,14 +200,14 @@ export default function PlacementForm() {
           name="message"
           rows={4}
           placeholder="Tell us about your location, any special requirements, or questions…"
-          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent resize-none"
+          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full bg-[#D4A017] text-[#0A1628] font-bold py-3 rounded-md hover:bg-[#e6b21e] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-[#38BDF8] text-[#0A1628] font-bold py-3 rounded-md hover:bg-[#0EA5E9] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'submitting' ? 'Sending…' : 'Submit Placement Request'}
       </button>

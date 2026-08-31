@@ -53,7 +53,7 @@ export default function MachineCard({ machine }: MachineCardProps) {
           </Link>
           <Link
             href="/quote"
-            className="flex-1 text-center text-sm font-semibold bg-[#D4A017] text-[#0A1628] rounded-md py-2 hover:bg-[#e6b21e] transition-colors"
+            className="flex-1 text-center text-sm font-semibold bg-[#38BDF8] text-[#0A1628] rounded-md py-2 hover:bg-[#0EA5E9] transition-colors"
           >
             Request a Quote
           </Link>

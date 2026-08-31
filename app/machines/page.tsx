@@ -30,7 +30,7 @@ export default function MachinesPage() {
       {/* Page header */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             Machine Catalog
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
@@ -53,8 +53,8 @@ export default function MachinesPage() {
               onClick={() => setActive(f.value)}
               className={`px-5 py-2 rounded-full text-sm font-semibold border transition-colors ${
                 active === f.value
-                  ? 'bg-[#D4A017] text-[#0A1628] border-[#D4A017]'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#D4A017] hover:text-[#D4A017]'
+                  ? 'bg-[#38BDF8] text-[#0A1628] border-[#38BDF8]'
+                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#38BDF8] hover:text-[#38BDF8]'
               }`}
             >
               {f.label}
@@ -75,7 +75,7 @@ export default function MachinesPage() {
       </div>
 
       {/* CTA strip */}
-      <div className="bg-[#D4A017] py-12">
+      <div className="bg-[#38BDF8] py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0A1628] mb-3">
             Don&apos;t see exactly what you need?
@@ -96,7 +96,7 @@ export default function MachinesPage() {
       <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+            <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
               The Japanese Vending Experience
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0A1628]">

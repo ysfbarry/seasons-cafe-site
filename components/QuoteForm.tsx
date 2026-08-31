@@ -49,7 +49,7 @@ export default function QuoteForm() {
         </p>
         <button
           onClick={() => setStatus('idle')}
-          className="mt-6 px-6 py-2 bg-[#D4A017] text-[#0A1628] font-semibold rounded-md hover:bg-[#e6b21e] transition-colors"
+          className="mt-6 px-6 py-2 bg-[#38BDF8] text-[#0A1628] font-semibold rounded-md hover:bg-[#0EA5E9] transition-colors"
         >
           Submit Another Request
         </button>
@@ -75,7 +75,7 @@ export default function QuoteForm() {
             name="fullName"
             type="text"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -87,7 +87,7 @@ export default function QuoteForm() {
             name="businessName"
             type="text"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -99,7 +99,7 @@ export default function QuoteForm() {
             name="phone"
             type="tel"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
         <div>
@@ -111,7 +111,7 @@ export default function QuoteForm() {
             name="email"
             type="email"
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function QuoteForm() {
                 type="checkbox"
                 name="machines"
                 value={machine.name}
-                className="mt-0.5 accent-[#D4A017]"
+                className="mt-0.5 accent-[#38BDF8]"
               />
               <span className="text-sm text-gray-700 group-hover:text-gray-900">
                 {machine.name}
@@ -140,7 +140,7 @@ export default function QuoteForm() {
               type="checkbox"
               name="machines"
               value="Other Machine"
-              className="mt-0.5 accent-[#D4A017]"
+              className="mt-0.5 accent-[#38BDF8]"
               onChange={(e) => setOtherChecked(e.target.checked)}
             />
             <span className="text-sm text-gray-700 group-hover:text-gray-900 font-medium">
@@ -160,14 +160,14 @@ export default function QuoteForm() {
                 name="otherMachineDescription"
                 rows={3}
                 placeholder="e.g. A compact hot drink machine for a small office, around 200 cups capacity, with a touchscreen..."
-                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent resize-none"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent resize-none"
               />
             </div>
             <div className="bg-white border border-amber-300 rounded-md p-3 text-sm text-gray-600">
               <p className="font-semibold text-gray-800 mb-1">Have a photo of what you&apos;re looking for?</p>
               <p>
                 Email your reference photos to{' '}
-                <a href="mailto:1seasonscafe@gmail.com" className="text-[#D4A017] font-medium hover:underline">
+                <a href="mailto:1seasonscafe@gmail.com" className="text-[#38BDF8] font-medium hover:underline">
                   1seasonscafe@gmail.com
                 </a>{' '}
                 with the subject line <span className="font-mono bg-gray-100 px-1 rounded">Quote Request – Machine Photo</span> and we&apos;ll source it for you.
@@ -186,7 +186,7 @@ export default function QuoteForm() {
           id="quantity"
           name="quantity"
           required
-          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent bg-white"
+          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent bg-white"
         >
           <option value="">Select quantity…</option>
           <option>1</option>
@@ -207,14 +207,14 @@ export default function QuoteForm() {
           name="notes"
           rows={4}
           placeholder="Tell us about your space, timeline, or any questions…"
-          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:border-transparent resize-none"
+          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full bg-[#D4A017] text-[#0A1628] font-bold py-3 rounded-md hover:bg-[#e6b21e] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-[#38BDF8] text-[#0A1628] font-bold py-3 rounded-md hover:bg-[#0EA5E9] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'submitting' ? 'Sending…' : 'Submit Quote Request'}
       </button>

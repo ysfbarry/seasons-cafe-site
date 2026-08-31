@@ -44,19 +44,19 @@ export default function Home() {
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage:
-              'repeating-linear-gradient(45deg, #D4A017 0, #D4A017 1px, transparent 0, transparent 50%)',
+              'repeating-linear-gradient(45deg, #38BDF8 0, #38BDF8 1px, transparent 0, transparent 50%)',
             backgroundSize: '30px 30px',
           }}
           aria-hidden="true"
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 text-center">
-          <p className="text-[#D4A017] text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest mb-4">
             Exclusive Japanese Distributor · DMV Operators
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
             Premium Japanese
             <br />
-            <span className="text-[#D4A017]">Vending Machines</span>
+            <span className="text-[#38BDF8]">Vending Machines</span>
             <br />
             Sold &amp; Operated
           </h1>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/machines"
-              className="bg-[#D4A017] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#e6b21e] transition-colors text-base"
+              className="bg-[#38BDF8] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#0EA5E9] transition-colors text-base"
             >
               Shop Machines
             </Link>
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* ─── Stats bar ─── */}
-      <section className="bg-[#D4A017]">
+      <section className="bg-[#38BDF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
             {stats.map((stat, i) => (
@@ -115,7 +115,7 @@ export default function Home() {
                 className="border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="text-4xl mb-4">{arm.icon}</div>
-                <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-1">
+                <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-1">
                   {arm.subtitle}
                 </p>
                 <h3 className="text-2xl font-bold text-[#0A1628] mb-3">{arm.title}</h3>
@@ -123,7 +123,7 @@ export default function Home() {
                 <ul className="space-y-2 mb-8">
                   {arm.perks.map((perk) => (
                     <li key={perk} className="flex items-center gap-2 text-sm text-gray-700">
-                      <FaCheckCircle className="text-[#D4A017] shrink-0" />
+                      <FaCheckCircle className="text-[#38BDF8] shrink-0" />
                       {perk}
                     </li>
                   ))}
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
             <Link
               href="/machines"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[#D4A017] hover:underline"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#38BDF8] hover:underline"
             >
               View full catalog <HiArrowRight />
             </Link>
@@ -181,7 +181,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/quote"
-              className="bg-[#D4A017] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#e6b21e] transition-colors"
+              className="bg-[#38BDF8] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#0EA5E9] transition-colors"
             >
               Get a Quote
             </Link>

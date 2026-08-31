@@ -19,7 +19,7 @@ export default function VideosPage() {
       {/* Header */}
       <div className="bg-[#0A1628] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#D4A017] text-xs font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
             Videos &amp; Podcast
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3">
@@ -62,7 +62,7 @@ export default function VideosPage() {
           /* ── Coming Soon state ── */
           <div className="max-w-xl mx-auto text-center py-20">
             <div className="w-20 h-20 rounded-full bg-[#0A1628] flex items-center justify-center mx-auto mb-6">
-              <FaYoutube size={36} className="text-[#D4A017]" />
+              <FaYoutube size={36} className="text-[#38BDF8]" />
             </div>
             <h2 className="text-2xl font-extrabold text-[#0A1628] mb-3">Episodes Coming Soon</h2>
             <p className="text-gray-500 leading-relaxed mb-8">
@@ -98,7 +98,7 @@ export default function VideosPage() {
               href={channelUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#D4A017] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#e6b21e] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#38BDF8] text-[#0A1628] font-bold px-8 py-4 rounded-md hover:bg-[#0EA5E9] transition-colors"
             >
               <FaYoutube size={20} />
               Subscribe on YouTube
