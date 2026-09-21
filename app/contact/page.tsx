@@ -3,7 +3,7 @@ import { FaEnvelope, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { siteConfig } from '@/data/site-config';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Seasons Cafe LLC',
+  title: 'Contact Us',
   description:
     'Get in touch with Seasons Cafe LLC. We\'re happy to answer questions about our Japanese vending machines, quote requests, and machine placement opportunities.',
 };

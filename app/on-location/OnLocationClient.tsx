@@ -107,8 +107,8 @@ function VideoPlayer({ video }: { video: (typeof videos)[number] }) {
           {muted ? <HiVolumeOff size={18} /> : <HiVolumeUp size={18} />}
         </button>
         {muted && (
-          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur text-white text-xs px-3 py-1.5 rounded-full pointer-events-none whitespace-nowrap">
-            Tap the speaker for sound
+          <div className="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-xs px-3 py-1.5 rounded-full pointer-events-none whitespace-nowrap">
+            Tap for sound
           </div>
         )}
       </div>

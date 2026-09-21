@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Careers | Seasons Cafe LLC',
+  title: 'Careers',
   description: 'Career opportunities at Seasons Cafe LLC — coming soon.',
 };
 

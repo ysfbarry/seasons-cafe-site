@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About Us | Seasons Cafe LLC',
+  title: 'About Us',
   description:
     'Seasons Cafe LLC is a veteran-owned vending machine company bringing unique Japanese-style hot and cold beverage machines to the DMV area.',
 };
