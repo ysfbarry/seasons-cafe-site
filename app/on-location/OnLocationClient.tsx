@@ -48,13 +48,6 @@ const photos: Photo[] = [
     site: 'Firestone Complete Auto Care',
     orientation: 'portrait',
   },
-  {
-    src: '/images/locations/exchange-express-storefront.jpg',
-    alt: 'Exchange Express storefront where Seasons Cafe machines are placed',
-    caption: 'Serving the military community at the Exchange Express',
-    site: 'Exchange Express',
-    orientation: 'landscape',
-  },
 ];
 
 export default function OnLocationClient() {
