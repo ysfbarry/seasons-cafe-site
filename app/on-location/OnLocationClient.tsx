@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { HiX, HiChevronLeft, HiChevronRight, HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
+import { HiX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 type Photo = {
   src: string;
@@ -56,67 +56,6 @@ const photos: Photo[] = [
     orientation: 'landscape',
   },
 ];
-
-const videos = [
-  {
-    src: '/videos/machine-tour-1.mp4',
-    poster: '/videos/poster-1.jpg',
-    title: 'Samurai Machine at the Exchange',
-    description: 'A walk-around of our cherry-blossom samurai machine on location.',
-  },
-  {
-    src: '/videos/machine-tour-2.mp4',
-    poster: '/videos/poster-2.jpg',
-    title: 'Stocked and Serving',
-    description: 'Hot and cold Japanese beverages, ready around the clock.',
-  },
-];
-
-function VideoPlayer({ video }: { video: (typeof videos)[number] }) {
-  const ref = useRef<HTMLVideoElement>(null);
-  const [muted, setMuted] = useState(true);
-
-  function toggleSound() {
-    const el = ref.current;
-    if (!el) return;
-    const next = !muted;
-    el.muted = next;
-    setMuted(next);
-    if (!next && el.paused) el.play().catch(() => {});
-  }
-
-  return (
-    <div className="flex flex-col">
-      <div className="relative rounded-2xl overflow-hidden bg-black shadow-xl group">
-        <video
-          ref={ref}
-          src={video.src}
-          poster={video.poster}
-          controls
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          className="w-full aspect-[9/16] object-cover"
-        />
-        <button
-          onClick={toggleSound}
-          aria-label={muted ? 'Unmute video' : 'Mute video'}
-          className="absolute top-3 right-3 bg-black/60 backdrop-blur text-white rounded-full p-2.5 hover:bg-[#38BDF8] hover:text-[#0A1628] transition-colors"
-        >
-          {muted ? <HiVolumeOff size={18} /> : <HiVolumeUp size={18} />}
-        </button>
-        {muted && (
-          <div className="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-xs px-3 py-1.5 rounded-full pointer-events-none whitespace-nowrap">
-            Tap for sound
-          </div>
-        )}
-      </div>
-      <h3 className="font-bold text-[#0A1628] mt-4">{video.title}</h3>
-      <p className="text-gray-500 text-sm mt-1">{video.description}</p>
-    </div>
-  );
-}
 
 export default function OnLocationClient() {
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -175,21 +114,6 @@ export default function OnLocationClient() {
         </div>
       </div>
 
-      {/* Videos */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-10">
-          <p className="text-[#38BDF8] text-xs font-semibold uppercase tracking-widest mb-2">
-            See Them In Action
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0A1628]">Machine Walkthroughs</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          {videos.map((v) => (
-            <VideoPlayer key={v.src} video={v} />
-          ))}
-        </div>
-      </div>
-
       {/* Photo gallery */}
       <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -198,10 +122,14 @@ export default function OnLocationClient() {
               Photo Gallery
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0A1628]">
-              Placed & Serving Customers
+              Placed &amp; Serving Customers
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm">
-              Click any photo to view it full size.
+              Click any photo to view it full size, or{' '}
+              <Link href="/videos" className="text-[#38BDF8] font-semibold hover:underline">
+                watch the machine walkthrough videos
+              </Link>
+              .
             </p>
           </div>
 
