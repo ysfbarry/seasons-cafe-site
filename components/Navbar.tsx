@@ -147,7 +147,7 @@ export default function Navbar() {
           {/* Mobile: Get a Quote button on right */}
           <Link
             href="/quote"
-            className="md:hidden bg-[#38BDF8] text-[#0A1628] font-semibold px-3 py-1.5 rounded-md text-xs hover:bg-[#0EA5E9] transition-colors"
+            className="md:hidden flex items-center bg-[#38BDF8] text-[#0A1628] font-semibold px-3.5 py-2.5 rounded-md text-xs hover:bg-[#0EA5E9] transition-colors"
           >
             Get a Quote
           </Link>

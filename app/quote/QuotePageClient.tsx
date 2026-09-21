@@ -99,7 +99,7 @@ export default function QuotePageClient() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-4 text-sm font-semibold border-b-2 whitespace-nowrap transition-colors ${
+                className={`flex-1 sm:flex-none px-2 sm:px-6 py-4 text-xs sm:text-sm font-semibold border-b-2 whitespace-nowrap transition-colors ${
                   activeTab === tab.id
                     ? 'border-[#38BDF8] text-[#38BDF8]'
                     : 'border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-300'

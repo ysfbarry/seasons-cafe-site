@@ -14,3 +14,28 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* iOS Safari zooms the page in when you focus a field whose font-size is under
+   16px. Bump form controls to 16px on small screens so tapping an input doesn't
+   yank the layout around. Desktop keeps the smaller type from the utility class. */
+@media (max-width: 640px) {
+  input:not([type='checkbox']):not([type='radio']),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
