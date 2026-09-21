@@ -105,8 +105,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#38BDF8]/10 mt-10 pt-6 text-center text-sm">
-          © {new Date().getFullYear()} Seasons Cafe LLC. All rights reserved.
+        <div className="border-t border-[#38BDF8]/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-center">
+          <span>© {new Date().getFullYear()} Seasons Cafe LLC. All rights reserved.</span>
+          <span className="hidden sm:inline text-gray-600">·</span>
+          <Link href="/privacy" className="hover:text-[#38BDF8] transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

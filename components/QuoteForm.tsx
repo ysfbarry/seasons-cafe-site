@@ -65,6 +65,17 @@ export default function QuoteForm() {
         </div>
       )}
 
+      {/* Honeypot: hidden from people, filled in by bots. Formspree drops any
+          submission where this has a value. */}
+      <input
+        type="text"
+        name="_gotcha"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
