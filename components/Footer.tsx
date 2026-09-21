@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Contact Us', href: '/contact' },
   { label: 'Careers', href: '/careers' },
   { label: 'Machines', href: '/machines' },
+  { label: 'On Location', href: '/on-location' },
   { label: 'Our Drinks', href: '/products' },
   { label: 'Get a Quote', href: '/quote' },
   { label: 'Place a Machine', href: '/place-a-machine' },
