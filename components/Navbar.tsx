@@ -48,7 +48,7 @@ export default function Navbar() {
 
           {/* Mobile: hamburger on left */}
           <button
-            className="md:hidden text-gray-300 hover:text-white p-2 rounded-md"
+            className="lg:hidden text-gray-300 hover:text-white p-2 rounded-md"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
@@ -56,7 +56,7 @@ export default function Navbar() {
           </button>
 
           {/* Logo — centered on mobile, left on desktop */}
-          <Link href="/" className="flex items-center gap-2 shrink-0 md:mr-6">
+          <Link href="/" className="flex items-center gap-2 shrink-0 lg:mr-6">
             <Image
               src="/images/logo.jpg"
               alt="Seasons Cafe LLC Logo"
@@ -71,7 +71,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-0.5 flex-1">
+          <div className="hidden lg:flex items-center gap-0.5 flex-1">
 
             {/* Home with dropdown */}
             <div className="relative" ref={dropRef}>
@@ -135,7 +135,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block shrink-0">
+          <div className="hidden lg:block shrink-0">
             <Link
               href="/quote"
               className="bg-[#38BDF8] text-[#0A1628] font-semibold px-4 py-2 rounded-md text-sm hover:bg-[#0EA5E9] transition-colors"
@@ -147,7 +147,7 @@ export default function Navbar() {
           {/* Mobile: Get a Quote button on right */}
           <Link
             href="/quote"
-            className="md:hidden flex items-center bg-[#38BDF8] text-[#0A1628] font-semibold px-3.5 py-2.5 rounded-md text-xs hover:bg-[#0EA5E9] transition-colors"
+            className="lg:hidden flex items-center bg-[#38BDF8] text-[#0A1628] font-semibold px-3.5 py-2.5 rounded-md text-xs hover:bg-[#0EA5E9] transition-colors"
           >
             Get a Quote
           </Link>
@@ -156,7 +156,7 @@ export default function Navbar() {
 
       {/* Mobile menu drawer */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0A1628] border-t border-[#38BDF8]/20 px-4 pb-4 pt-2 space-y-1">
+        <div className="lg:hidden bg-[#0A1628] border-t border-[#38BDF8]/20 px-4 pb-4 pt-2 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
           {/* Home section */}
           <Link
             href="/"
