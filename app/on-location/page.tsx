@@ -4,7 +4,7 @@ import OnLocationClient from './OnLocationClient';
 export const metadata: Metadata = {
   title: 'On Location',
   description:
-    'See real Seasons Cafe Japanese vending machines currently placed and serving customers across the DMV, including Exchange Express and Firestone Complete Auto Care.',
+    'Find Seasons Cafe vending machines at Fort Belvoir, Fort A.P. Hill, Fort Lee, and Fort Eustis, with more Virginia locations on the way.',
 };
 
 export default function OnLocationPage() {

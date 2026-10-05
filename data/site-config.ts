@@ -30,7 +30,7 @@ export const siteConfig = {
   youtubeChannel: '', // e.g. 'https://youtube.com/@SeasonsCafe'
 
   // ── SEO / Meta ─────────────────────────────────────────────
-  siteUrl: 'https://seasonscafellc.com', // update once your domain is set
+  siteUrl: 'https://seasonscafevending.com',
   metaDescription:
     'Seasons Cafe LLC sells and operates premium Japanese hot & cold vending machines. Exclusive distributor serving businesses and the DC/Maryland/Virginia area.',
 };
